@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/ll_fragment_root"
+              android:background="@color/colorPrimary"
+              tools:context=".ui.fragment.AppleFullInfoFragment">
+
+    <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_back"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/back_arrow"
+
+            />
+
+            <TextView
+                    android:id="@+id/text_product"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Detail"
+
+                     />
+
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_150sdp">
+                <ImageView
+                        android:id="@+id/img_info"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                       />
+                <LinearLayout
+                        android:padding="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:id="@+id/status_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal">
+                    <TextView
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:id="@+id/txt_status"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:text="COMING SOON"
+                            android:textColor="@color/colorWhite"
+
+                            android:textSize="@dimen/_12sdp"/>
+                    <ImageView
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:id="@+id/img_logo"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_margin="@dimen/_10sdp"
+                        android:padding="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:id="@+id/ll_view_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/colorWhite"
+                        android:orientation="horizontal">
+                    <ImageView
+
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="@dimen/_8sdp"
+                            android:src="@drawable/map_img"/>
+                    <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View Map"
+                            android:textColor="@color/colorRed"
+
+                            android:textSize="@dimen/_6sdp"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <TextView
+                    android:id="@+id/txt_named"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="CORTLAND"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+
+                    android:textSize="@dimen/_13sdp"/>
+
+            <TextView
+
+                    android:id="@+id/txt_descriptiond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_gravity="center"
+                    android:text="We're centrial indiana fanily -  friendly working orched and  lorem ipsom is txt used for dummy purpose you dont have to read it"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

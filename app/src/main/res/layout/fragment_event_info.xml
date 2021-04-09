@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/ll_fragment_root"
+              android:orientation="vertical"
+              android:background="@color/colorPrimary"
+              tools:context=".ui.fragment.EventInfoFragment">
+
+
+    <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+
+           >
+
+            <ImageView
+
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/back_arrow1"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+
+                   />
+
+
+        <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/app_logo"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+
+                />
+
+            <ImageView
+
+                    android:id="@+id/imgTicket"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/ticket"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+
+
+                    />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ImageView
+
+                android:id="@+id/img_full_screen"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+        <ScrollView
+
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingLeft="@dimen/_15sdp">
+
+            <LinearLayout
+
+                    android:id="@+id/ll_show_List"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

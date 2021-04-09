@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_root"
+        android:background="@color/colorPrimary"
+        tools:context=".ui.activity.SelectLocationActivity">
+
+
+    <RelativeLayout
+
+            android:id="@+id/relative_top"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+        <ImageView
+
+                android:id="@+id/img_back"
+                android:layout_marginTop="20dp"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/back_arrow"
+
+             />
+
+        <ImageView
+
+                android:id="@+id/img_logo"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/app_logo"
+
+            />
+
+        <TextView
+
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Select one of the Farm Location \nto continue"
+
+              />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+            android:layout_below="@+id/relative_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <androidx.recyclerview.widget.RecyclerView
+
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycleView_location">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/recycleView_location"
+                android:id="@+id/text_save"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="20dp"
+                android:text="Save"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/background_color"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+             />
+
+    </RelativeLayout>
+
+</RelativeLayout>

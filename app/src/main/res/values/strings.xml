@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stuckey Farm</string>
+    <string name="google_maps_api_key">AIzaSyCFR3SuApx_yBvuc2vdkvA1JcbsUdH4vig</string>
+<!--    //<string name="google_maps_api_key">AIzaSyCFR3SuApx_yBvuc2vdkvA1JcbsUdH4vig</string>-->
+
+    <string name="action_settings" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="permission">Please first turn on permission</string>
+    <string name="no_internet">no internet connection!</string>
+    <string name="missing_application_id_title">Missing Square Application ID</string>
+    <string name="missing_application_id_message"><![CDATA[Please update <b>sqip.SQUARE_APPLICATION_ID</b> in <b>AndroidManifest.xml</b> if you want to be able to create a nonce.]]></string>
+    <string name="successful_order_title">Your order was successful</string>
+    <string name="successful_order_message">Go to your Square dashboard to see this order reflected in the sales tab.</string>
+    <string name="server_host_not_set_title">Nonce generated but not charged</string>
+    <string name="server_host_not_set_message"><![CDATA[Check logcat <b>Info</b> messages for a CURL command to charge the nonce, or replace <b>ConfigHelper.CHARGE_SERVER_HOST</b> with your server host.]]></string>
+
+
+    <!--    Squre email id :-matt@memomarketinggroup.com-->
+
+</resources>

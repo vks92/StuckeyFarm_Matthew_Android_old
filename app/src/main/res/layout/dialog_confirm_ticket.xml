@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_close"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/cancel"
+
+               />
+
+        <EditText
+
+                android:id="@+id/etEmail"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_background"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColorHint="@color/colorBlack"
+                android:hint="Enter email address"
+                android:layout_below="@+id/img_close"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+
+
+                />
+
+        <TextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_below="@+id/etEmail"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/txt_dialog_total_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/colorWhite"
+                android:text="Total Quantity: 0"/>
+
+        <TextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_below="@+id/txt_dialog_total_quantity"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/txt_dialog_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/colorWhite"
+                android:text="Total Price: $0"
+
+                />
+
+
+        <Button
+
+                android:id="@+id/bt_pay"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorBlack"
+                android:text="pay"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_below="@+id/txt_dialog_total_price"
+                android:layout_centerHorizontal="true"
+
+                />
+
+</RelativeLayout>

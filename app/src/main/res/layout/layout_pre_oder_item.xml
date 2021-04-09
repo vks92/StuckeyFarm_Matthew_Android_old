@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/root_ll"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@color/colorTBG"
+            android:gravity="center"
+
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:gravity="center"
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Harvest Festival"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_15sdp"
+                />
+
+        <TextView
+                android:gravity="center"
+                android:id="@+id/txt_name"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harvest Festival"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"/>
+
+        <ImageView
+                android:scaleType="fitXY"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:gravity="center"
+                android:id="@+id/img"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:text="Harvest Festival"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"/>
+
+
+        <TextView
+                android:gravity="center"
+                android:id="@+id/txt_description"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harvest Festival"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13sdp"/>
+
+        <Button
+                android:id="@+id/bt_buy"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:text="BUY PRODUCTS"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/retanguler"
+                />
+    </LinearLayout>
+
+</LinearLayout>

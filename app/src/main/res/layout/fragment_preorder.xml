@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTBG"
+        android:id="@+id/ll_root"
+        tools:context="com.stuckeyfarm.ui.fragment.PreorderFragment">
+
+    <RelativeLayout
+
+            android:id="@+id/re_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+
+            >
+
+        <ImageView
+
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/back_arrow1"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+
+                />
+
+
+        <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/app_logo"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+
+                />
+
+        <ImageView
+
+                android:id="@+id/imgTicket"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/ticket"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+
+
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/re_toppp"
+            android:layout_below="@+id/re_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+        <ImageView
+
+                android:id="@+id/img_bg"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/re_preorder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+
+                />
+
+        <TextView
+                android:visibility="gone"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/txt_no_data"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Product Category to show"
+
+                />
+    </RelativeLayout>
+
+</RelativeLayout>

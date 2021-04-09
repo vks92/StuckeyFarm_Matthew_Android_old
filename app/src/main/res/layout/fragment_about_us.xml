@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:id="@+id/ll_root"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorBlack"
+              tools:context=".ui.fragment.AboutUsFragment">
+
+    <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ll_back"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/back_arrow"
+
+            />
+
+            <TextView
+
+                    android:id="@+id/text_product"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABOUT US"
+
+                    />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+                android:id="@+id/ll_show_List"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+            <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+
+                        android:id="@+id/img_about"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+
+                />
+
+                <TextView
+
+                        android:id="@+id/txt_label"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="ABOUT STUCKEY FARM"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:background="@color/colorTWG"
+                        android:textSize="@dimen/_13sdp"
+
+                />
+
+            </RelativeLayout>
+
+            <TextView
+
+                    android:id="@+id/txt_des"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp"
+            />
+
+
+            <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/open_close_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Hours: Open- Close 6:00 PM"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp"
+
+                />
+                <ImageView
+                           android:layout_width="@dimen/_10sdp"
+                           android:layout_height="@dimen/_10sdp"
+                           android:src="@drawable/down"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/ll_email_us"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_email"
+                        android:text="EMAIL US"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp"
+                />
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/ll_call_us"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/txt_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="CALL US"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp"
+                />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
